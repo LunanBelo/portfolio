@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
+body {
+  font-family: Cambria, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background-color: #fdfaf5;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #fdfaf5;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: #0E2635;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 3px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #fdfaf5;
+  color: #0E2635;
+}
+
+.header a.active {
+  background-color: #ca4b36;
+  color: white;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between; /* Image and text side by side */
+  align-items: flex-start;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  padding: 20px; 
+  background-color: #fdfaf5;
+}
+
+nav img {
+  width: 100%;
+  height: auto;
+}
+
+article {
+  flex: 2;
+  padding: 20px;
+  background-color: #fdfaf5;
+  color: black;
+  display: flex;
+  flex-direction: column; /* Ensures button is below text */
+}
+
+.article {
+  text-align: center;
+  font-family: 'Nave', sans-serif; 
+} 
+
+footer {
+  background-color: #fdfaf5;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+</style>
+<!-- Links para as fontes Edu AU VIC WA NT Hand e Playwrite CU -->
+<link rel="stylesheet" href="https://use.typekit.net/lxm8kwv.css">
+</head>
+<body style="background-color: #DD2804;">
+
+<div class="header">
+  <img src="https://lh4.googleusercontent.com/s-1OYmy0WkrI-b-a9C39Ry1qcIt-LbPZO6Q6h9PxSBUL2FsiRolDHnX7CBlvj6GnW-5d15qnyA-DPZiyfg6cBaGZDCrHr3vCn4p4V4skNdVNh-PL75muxUI5RFQt5hofQg=w1280" alt="Logo" style="width:200px"; class= logo></a>
+  <div class="header-right">
+    <a class="active" href="#home">Projetos</a>
+    <a href="#contact">Sobre</a>
+    <a href="#about">Contato</a>
+  </div> 
+</div>
+
+<header>
+  <img src="https://marketplace.canva.com/EAFYIWPCudg/1/0/1600w/canva-papel-de-parede-para-computador-astronauta-gal%C3%A1xia-preto-e-branco-lKp1cXK1ybY.jpg" alt="Surrealismo" style="width:100%;height:100%;">
+  
+</header>
+
+<section>
+  <nav>
+    <img src="https://lh3.googleusercontent.com/gVEbTy6KsJ9yTjo52J753zt1tEI0bbNNWa7C0UwBI8zXrQVhocLNpEsLOchDJ0oK4clC17YWJdG9sd6Xz5XwNOWQyjCwGALRc6R-czLdTe8mOCpgklgGvsOzQxry_UyyNg=w1280" alt="Surrealismo">
+  </nav>
+  
+  <article>
+    <h1>ONDE A MINHA IMAGINACAO ENCONTRA A REALIDADE</h1>
+    <p>Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias! </p>
+
+    <div class="button-container">
+      <button class="button" onclick="alert('Hello world!')">Conheça mais!</button>
+    </div>
+  </article>
+</section>
+
+
+<footer>
+  <p>O Blog Surrealista</p>
+</footer>
+
+</body>
+</html>
