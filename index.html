@@ -9,6 +9,7 @@ body {
   font-family: Cambria, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fdfaf5; /* Define a cor de fundo para a página inteira */
 }
 
 header {
@@ -16,12 +17,11 @@ header {
   text-align: center;
   font-size: 35px;
   color: white;
-  background-color: #fdfaf5;
   overflow: hidden;
 }
 
 .header {
-  background-color: #fdfaf5;
+  background-color: #fdfaf5; /* Cor do cabeçalho alinhada com o fundo da página */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@ header {
 
 section {
   display: flex;
-  justify-content: space-between; /* Image and text side by side */
+  justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
 }
@@ -69,7 +69,6 @@ section {
 nav {
   flex: 1;
   padding: 20px; 
-  background-color: #fdfaf5;
 }
 
 nav img {
@@ -80,32 +79,29 @@ nav img {
 article {
   flex: 2;
   padding: 20px;
-  background-color: #fdfaf5;
   color: black;
   display: flex;
-  flex-direction: column; /* Ensures button is below text */
+  flex-direction: column;
 }
 
 .article {
   text-align: center;
   font-family: 'Nave', sans-serif; 
-} 
-
 }
 
 .image-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Centraliza as imagens na linha */
   padding: 20px 0;  
 }
 
 .image-row div {
   text-align: center;
-  width: 30%;
+  margin: 0 15px; /* Espaçamento entre as imagens */
 }
 
 .image-row img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -114,11 +110,10 @@ article {
   margin-top: 10px;
   font-size: 14px;
   font-style: italic;
-  color: white;
+  color: #0E2635;
 }
 
 footer {
-  background-color: #fdfaf5;
   padding: 10px;
   text-align: center;
   color: black;
@@ -135,13 +130,12 @@ footer {
   }
 }
 </style>
-<!-- Links para as fontes Edu AU VIC WA NT Hand e Playwrite CU -->
 <link rel="stylesheet" href="https://use.typekit.net/lxm8kwv.css">
 </head>
-<body style="background-color: #DD2804;">
+<body>
 
 <div class="header">
-  <img src="https://lh4.googleusercontent.com/s-1OYmy0WkrI-b-a9C39Ry1qcIt-LbPZO6Q6h9PxSBUL2FsiRolDHnX7CBlvj6GnW-5d15qnyA-DPZiyfg6cBaGZDCrHr3vCn4p4V4skNdVNh-PL75muxUI5RFQt5hofQg=w1280" alt="Logo" style="width:200px"; class= logo></a>
+  <img src="https://lh4.googleusercontent.com/s-1OYmy0WkrI-b-a9C39Ry1qcIt-LbPZO6Q6h9PxSBUL2FsiRolDHnX7CBlvj6GnW-5d15qnyA-DPZiyfg6cBaGZDCrHr3vCn4p4V4skNdVNh-PL75muxUI5RFQt5hofQg=w1280" alt="Logo" style="width:200px;" class="logo">
   <div class="header-right">
     <a class="active" href="#home">Projetos</a>
     <a href="#contact">Sobre</a>
@@ -151,17 +145,16 @@ footer {
 
 <header>
   <img src="https://marketplace.canva.com/EAFYIWPCudg/1/0/1600w/canva-papel-de-parede-para-computador-astronauta-gal%C3%A1xia-preto-e-branco-lKp1cXK1ybY.jpg" alt="Surrealismo" style="width:100%;height:100%;">
-  
 </header>
 
 <section>
   <nav>
-    <img src="https://lh3.googleusercontent.com/gVEbTy6KsJ9yTjo52J753zt1tEI0bbNNWa7C0UwBI8zXrQVhocLNpEsLOchDJ0oK4clC17YWJdG9sd6Xz5XwNOWQyjCwGALRc6R-czLdTe8mOCpgklgGvsOzQxry_UyyNg=w1280" alt="Surrealismo">
+    <img src="https://lh6.googleusercontent.com/q0dc_6wJLP1LhMChHRgKWhinVeb9BmUH76ugj3EoWtdCD2KTQESLiU9LIFQLzg74YqjlrTOw_2S2ZD3NCenzRSLwi67uO1ETThCQdlzLlMM_InJcN1k5bok3DrhOlwWICQ=w1280" alt="Surrealismo">
   </nav>
   
   <article>
     <h1>ONDE A MINHA IMAGINACAO ENCONTRA A REALIDADE</h1>
-    <p>Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias! </p>
+    <p>Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias!</p>
 
     <div class="button-container">
       <button class="button" onclick="alert('Hello world!')">Conheça mais!</button>
@@ -169,8 +162,7 @@ footer {
   </article>
 </section>
 
-
-<div class="image-row">	
+<div class="image-row">  
   <div>
     <img src="https://lh5.googleusercontent.com/EXLEWZacYp9M-OXKxc48iqAQRDsS5G4MFiBdCTc8zuVsrch7yo2fjStvgxxkpLwc48bd0gVOYFc2_b6tWwofM654mY99bhkKDH68wXHaB3ijhoBfDlXBpxk3RoYZKIFfQw=w1280" alt="imagem.relogio">
     <p class="image-caption">Joy Gourmet</p>
@@ -181,21 +173,22 @@ footer {
   </div>
 </div>
 
-<div class="image-row">	
+<div class="image-row">  
   <div>
     <img src="https://lh5.googleusercontent.com/PEUcIhU7CEim3cM-2yi_k22fmlJL4kkYlfwxu78wNHuIsP_SJHem1Iefj1RXp4mChcRbVZ9YXPTvHlIrDWtxKwwF4CN2Uc6Rn8HMrxv5EZ2aRxselD88STFT67cKuhydlg=w1280" alt="imagem.relogio">
     <p class="image-caption">Favela Cria</p>
   </div>
   <div>
     <img src="https://lh5.googleusercontent.com/j5QsNeW6WBlvYQHmZtpnqYW-SYy5InpauOl9_fXwH8F_tgSW6_isHpScI8Q-hnPRz0C5hyXo_PfUM-wF4tcu23cctLXHgheiLu4sb3zJpOOd9J4wW2MPvMCLy527YK-A4Q=w1280" alt="imagem.relogio">
-    <p class="image-caption">Favela Cria</p>
+    <p class="image-caption">Studio Freire</p>
   </div>
 </div>
 
-
-<footer>
-  <p>O Blog Surrealista</p>
-</footer>
-
-</body>
-</html>
+<div class="image-row">  
+  <div>
+    <img src="https://lh4.googleusercontent.com/umure8mDox49VqTYfAyueTGi4YEY6-tVCeMgP-pZ0w3fDuJSYpvinBjZfjX-Qa_r6SwEUUM-btpQkpEUox_vY6LAKlPogRULNsh5OAWwjFpO-tcwvV-nOnBR1BJkqP-XHQ=w1280" alt="imagem.relogio">
+    <p class="image-caption">Redes Sociais</p>
+  </div>
+  <div>
+    <img src="https://lh5.googleusercontent.com/o3skY3Sd91m0x9LY-f44OK5hlQH8mkxFcWRtlOrSWGdm1DwtgLIw06teeLkEqz9DnNC-_8lni19Vgt2N7iBGiiaFufJ43qGB2l8Q6TTy7jsuoR7nxR-uAkLLcntd4UztaA=w1280" alt="imagem.relogio">
+    <p class="image-caption">Light Steel</p>
