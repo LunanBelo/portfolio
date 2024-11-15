@@ -4,9 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 body {
-  font-family: Cambria, Helvetica, sans-serif;
+  font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fdfaf5; /* Define a cor de fundo para a página inteira */
@@ -28,6 +27,23 @@ header {
   align-items: center;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 30px; /* Tamanho da logo */
+  height: auto;
+}
+
+.logo-container .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0E2635;
+}
+
 .header a {
   color: #0E2635;
   text-align: center;
@@ -36,11 +52,6 @@ header {
   font-size: 18px; 
   line-height: 25px;
   border-radius: 3px;
-}
-
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
 }
 
 .header a:hover {
@@ -89,28 +100,38 @@ article {
   font-family: 'Nave', sans-serif; 
 }
 
-.image-row {
+.linha-imagem {
   display: flex;
   justify-content: center; /* Centraliza as imagens na linha */
-  padding: 20px 0;  
+  flex-wrap: wrap; /* Permite quebrar para uma nova linha em telas menores */
+  gap: 20px; /* Espaçamento entre as colunas */  
 }
 
-.image-row div {
+.linha-imagem div {
   text-align: center;
-  margin: 0 15px; /* Espaçamento entre as imagens */
+  width: 45%
 }
 
-.image-row img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.linha-imagem img {
+ width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
 }
 
-.image-caption {
-  margin-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #0E2635;
+.linha-imagem button {
+  margin-top: 10px; /* Espaçamento entre imagem e botão */
+  width: 100%; /* Faz o botão ocupar a largura do contêiner */
+  padding: 10px; /* Espaçamento interno do botão */
+  background-color: #ca4b36;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.linha-imagem button:hover {
+  background-color: #a3392c;
 }
 
 footer {
@@ -120,6 +141,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   section {
     flex-direction: column;
   }
@@ -130,12 +155,14 @@ footer {
   }
 }
 </style>
-<link rel="stylesheet" href="https://use.typekit.net/lxm8kwv.css">
 </head>
 <body>
 
 <div class="header">
-  <img src="https://lh4.googleusercontent.com/s-1OYmy0WkrI-b-a9C39Ry1qcIt-LbPZO6Q6h9PxSBUL2FsiRolDHnX7CBlvj6GnW-5d15qnyA-DPZiyfg6cBaGZDCrHr3vCn4p4V4skNdVNh-PL75muxUI5RFQt5hofQg=w1280" alt="Logo" style="width:200px;" class="logo">
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/5tr03BqS/icone.png" alt="Logo">
+    <span class="logo-text">Lunan Belo</span>
+  </div>
   <div class="header-right">
     <a class="active" href="#home">Projetos</a>
     <a href="#contact">Sobre</a>
@@ -149,12 +176,12 @@ footer {
 
 <section>
   <nav>
-    <img src="https://lh6.googleusercontent.com/q0dc_6wJLP1LhMChHRgKWhinVeb9BmUH76ugj3EoWtdCD2KTQESLiU9LIFQLzg74YqjlrTOw_2S2ZD3NCenzRSLwi67uO1ETThCQdlzLlMM_InJcN1k5bok3DrhOlwWICQ=w1280" alt="Surrealismo">
+    <article>
+    <h1>Sobre</h1>
   </nav>
   
   <article>
-    <h1>ONDE A MINHA IMAGINACAO ENCONTRA A REALIDADE</h1>
-    <p>Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias!</p>
+    <h1>Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias!</h1>
 
     <div class="button-container">
       <button class="button" onclick="alert('Hello world!')">Conheça mais!</button>
@@ -162,33 +189,50 @@ footer {
   </article>
 </section>
 
-<div class="image-row">  
+<section>
+  <nav>
+<article>
+	<h2>⤵ Projetos</h2>
+   <nav>
+
+<div class="linha-imagem">  
   <div>
-    <img src="https://lh5.googleusercontent.com/EXLEWZacYp9M-OXKxc48iqAQRDsS5G4MFiBdCTc8zuVsrch7yo2fjStvgxxkpLwc48bd0gVOYFc2_b6tWwofM654mY99bhkKDH68wXHaB3ijhoBfDlXBpxk3RoYZKIFfQw=w1280" alt="imagem.relogio">
-    <p class="image-caption">Joy Gourmet</p>
+    <img src="https://i.postimg.cc/3JKTktP0/joy1-site.png">
+    <button class="button" onclick="alert('Hello world!')">Joy Gourmet</button>
   </div>
   <div>
-    <img src="https://lh4.googleusercontent.com/3jSZpHiMzKNp9YZfUA6JEl1w47D8VIu_vWclHT68UgkYZQjNMnBhw6tNo_O3SDN3faJbsjTezcuVDRRLo6kItyz36k_Gvec-DgH_CW6u-Kjy-QZDN5624i3B8u-C2HAZPA=w1280">
-    <p class="image-caption">Pan Jeronny</p>
+    <img src="https://i.postimg.cc/026zB2yC/pan-home-3.png">
+    <button class="button" onclick="alert('Hello world!')">Pan Jeronny</button>
   </div>
 </div>
 
-<div class="image-row">  
+<div class="linha-imagem">  
   <div>
-    <img src="https://lh5.googleusercontent.com/PEUcIhU7CEim3cM-2yi_k22fmlJL4kkYlfwxu78wNHuIsP_SJHem1Iefj1RXp4mChcRbVZ9YXPTvHlIrDWtxKwwF4CN2Uc6Rn8HMrxv5EZ2aRxselD88STFT67cKuhydlg=w1280" alt="imagem.relogio">
-    <p class="image-caption">Favela Cria</p>
-  </div>
-  <div>
-    <img src="https://lh5.googleusercontent.com/j5QsNeW6WBlvYQHmZtpnqYW-SYy5InpauOl9_fXwH8F_tgSW6_isHpScI8Q-hnPRz0C5hyXo_PfUM-wF4tcu23cctLXHgheiLu4sb3zJpOOd9J4wW2MPvMCLy527YK-A4Q=w1280" alt="imagem.relogio">
-    <p class="image-caption">Studio Freire</p>
+    <img src="https://i.postimg.cc/sxx48dMZ/gif-criabanner.gif">
+    <button class="button" onclick="alert('Hello world!')">FavelaCria</button>
   </div>
 </div>
 
-<div class="image-row">  
+<div class="linha-imagem">  
   <div>
-    <img src="https://lh4.googleusercontent.com/umure8mDox49VqTYfAyueTGi4YEY6-tVCeMgP-pZ0w3fDuJSYpvinBjZfjX-Qa_r6SwEUUM-btpQkpEUox_vY6LAKlPogRULNsh5OAWwjFpO-tcwvV-nOnBR1BJkqP-XHQ=w1280" alt="imagem.relogio">
-    <p class="image-caption">Redes Sociais</p>
+    <img src="https://i.postimg.cc/W4sWnyw0/M-DIAS-SOCIAS.gif">
+  </div>
+</div>
+
+<div class="linha-imagem">  
+  <div>
+    <img src="https://i.postimg.cc/mZcPkgWF/mockupcj-home.png">
+    <button class="button" onclick="alert('Hello world!')">Redes Sociais</button>
   </div>
   <div>
-    <img src="https://lh5.googleusercontent.com/o3skY3Sd91m0x9LY-f44OK5hlQH8mkxFcWRtlOrSWGdm1DwtgLIw06teeLkEqz9DnNC-_8lni19Vgt2N7iBGiiaFufJ43qGB2l8Q6TTy7jsuoR7nxR-uAkLLcntd4UztaA=w1280" alt="imagem.relogio">
-    <p class="image-caption">Light Steel</p>
+    <img src="https://i.postimg.cc/Bv6qzmq1/mockuppcj-home.png" style="width:50%;">
+    <button class="button" onclick="alert('Hello world!')">Emails marketing</button>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 - Lunan Belo</p>
+</footer>
+
+</body>
+</html>
