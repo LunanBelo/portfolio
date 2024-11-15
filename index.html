@@ -79,7 +79,7 @@ section {
 
 .sobre {
   background-color: #282828; /* Cor de fundo personalizada */
-  font-size: 38px
+  font-size: 38px;
   color: white; /* Texto em branco para contraste */
   padding: 30px; /* Espaçamento interno */
   border-radius: 8px; 
@@ -95,6 +95,7 @@ section {
   font-weight: bold; /* Deixe mais destacado, se quiser */
   color: white; /* Certifique-se de que a cor esteja correta */
 }
+
 .sobre .button-container .button {
   background-color: #a3392c; /* Cor de fundo do botão */
   color: white; /* Texto do botão */
@@ -135,6 +136,12 @@ article {
   font-family: 'Nave', sans-serif; 
 }
 
+.titulo-projetos {
+  font-size: 90px; /
+  font-weight: bold; /
+  color: black;
+}
+
 .linha-imagem {
   display: flex;
   justify-content: center; /* Centraliza as imagens na linha */
@@ -144,11 +151,11 @@ article {
 
 .linha-imagem div {
   text-align: center;
-  width: 45%
+  width: 45%;
 }
 
 .linha-imagem img {
- width: 100%; 
+  width: 100%; 
   height: auto; 
   border-radius: 8px; 
 }
@@ -171,6 +178,14 @@ article {
   background-color: #a3392c;
 }
 
+.contato {
+  background-color: #282828; /* Cor de fundo personalizada */
+  font-size: 38px;
+  color: white; /* Texto em branco para contraste */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 8px; 
+}
+
 footer {
   padding: 10px;
   text-align: center;
@@ -191,6 +206,12 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+.linha-fina {
+  border-top: 2px solid #282828; 
+  margin: 20px 0; 
+}
+
 </style>
 </head>
 <body>
@@ -219,7 +240,9 @@ footer {
   </nav>
   
   <article>
-    <h1>Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias!</h1>
+    <h1 style="font-size: 22px; line-height: 1.5; max-width: 800px; margin: 0 auto;">
+      Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias!
+    </h1>
     <div class="button-container">
       <button class="button" onclick="alert('Hello world!')"> ME CONHEÇA MAIS    ↗</button>
     </div>
@@ -228,47 +251,64 @@ footer {
 
 <section>
   <nav>
-<article>
-	<h2>⤵ Projetos</h2>
-   <nav>
+    <article>
+      <h2 class="titulo-projetos">⤵ Projetos</h2>
+      <div class="linha-fina"></div>
 
-<div class="linha-imagem">  
-  <div>
-    <img src="https://i.postimg.cc/3JKTktP0/joy1-site.png">
-    <button class="button" onclick="alert('Hello world!')">JOY GOURMET</button>
-  </div>
-  <div>
-    <img src="https://i.postimg.cc/SQtjmjSH/joy1-site.png">
-    <button class="button" onclick="alert('Hello world!')">PAN JERONNY</button>
-  </div>
-</div>
+      <div class="linha-imagem">  
+        <div>
+          <img src="https://i.postimg.cc/3JKTktP0/joy1-site.png">
+          <button class="button" onclick="alert('Hello world!')">JOY GOURMET</button>
+        </div>
+        <div>
+          <img src="https://i.postimg.cc/SQtjmjSH/joy1-site.png">
+          <button class="button" onclick="alert('Hello world!')">PAN JERONNY</button>
+        </div>
+      </div>
 
-<div class="linha-imagem">  
-  <div>
-    <img src="https://i.postimg.cc/hGgVVh7p/git-favelaport.gif">
-    <button class="button" onclick="alert('Hello world!')">FAVELACRIA</button>
-  </div>
-</div>
+      <div class="linha-imagem">  
+        <div>
+          <img src="https://i.postimg.cc/hGgVVh7p/git-favelaport.gif">
+          <button class="button" onclick="alert('Hello world!')">FAVELACRIA</button>
+        </div>
+      </div>
 
-<div class="linha-imagem">  
-  <div>
-    <img src="https://i.postimg.cc/W4sWnyw0/M-DIAS-SOCIAS.gif">
-  </div>
-</div>
+      <div class="linha-imagem" style="margin-top: 30px;"> 
+        <div>
+          <img src="https://i.postimg.cc/W4sWnyw0/M-DIAS-SOCIAS.gif">
+        </div>
+      </div>
 
-<div class="linha-imagem">  
-  <div>
-    <img src="https://i.postimg.cc/mZcPkgWF/mockupcj-home.png">
-    <button class="button" onclick="alert('Hello world!')">REDES SOCIAS</button>
-  </div>
-  <div>
-    <img src="https://i.postimg.cc/Bv6qzmq1/mockuppcj-home.png" style="width:50%;">
-    <button class="button" onclick="alert('Hello world!')">EMAILS MARKETING</button>
-  </div>
-</div>
+      <div class="linha-imagem">  
+        <div>
+          <img src="https://i.postimg.cc/mZcPkgWF/mockupcj-home.png">
+          <button class="button" onclick="alert('Hello world!')">REDES SOCIAS</button>
+        </div>
+        <div>
+          <img src="https://i.postimg.cc/Bv6qzmq1/mockuppcj-home.png" style="width:50%;">
+          <button class="button" onclick="alert('Hello world!')">EMAILS MARKETING</button>
+        </div>
+      </div>
+    </article>
+  </nav>
+</section>
+
+<section class="contato">
+  <article>
+    <h2>Se você tem algum projeto em mente, me envie uma mensagem! 😊</h2>
+    <div class="button-container">
+      <button class="button" onclick="alert('Hello world!')">ENTRE EM CONTATO ↗</button>
+    </div>
+  </article>
+</section>
+
+ <div class="linha-imagem" >  
+        <div>
+          <img src="https://i.postimg.cc/9Qngt6hD/logo.png">
+ </div>
 
 <footer>
-  <p>&copy; 2024 - Lunan Belo</p>
+  <p>&copy; 2024 Lunan Belo. Todos os direitos reservados.</p>
 </footer>
 
 </body>
