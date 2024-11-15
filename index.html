@@ -60,8 +60,8 @@ header {
 }
 
 .header a.active {
-  background-color: #ca4b36;
-  color: white;
+  background-color: #fdfaf5;
+  color: #0E2635;
   font-weight: bold;
 }
 
@@ -76,6 +76,41 @@ section {
   align-items: flex-start;
   padding: 20px;
 }
+
+.sobre {
+  background-color: #282828; /* Cor de fundo personalizada */
+  font-size: 38px
+  color: white; /* Texto em branco para contraste */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 8px; 
+}
+
+.sobre h1 {
+  color: white;
+  margin-top: 0; /* Remove margem superior padrão */
+}
+
+.titulo-sobre {
+  font-size: 48px; /* Aumente o tamanho da palavra "Sobre" */
+  font-weight: bold; /* Deixe mais destacado, se quiser */
+  color: white; /* Certifique-se de que a cor esteja correta */
+}
+.sobre .button-container .button {
+  background-color: #a3392c; /* Cor de fundo do botão */
+  color: white; /* Texto do botão */
+  border: 3px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sobre .button-container .button:hover {
+  background-color: white; /* Fundo ao passar o mouse */
+  color: #ca4b36; /* Texto ao passar o mouse */
+}
+
 
 nav {
   flex: 1;
@@ -119,18 +154,20 @@ article {
 }
 
 .linha-imagem button {
+  background-color: #fdfaf5;
   margin-top: 10px; /* Espaçamento entre imagem e botão */
   width: 100%; /* Faz o botão ocupar a largura do contêiner */
   padding: 10px; /* Espaçamento interno do botão */
-  background-color: #ca4b36;
-  color: white;
-  border: none;
+  color: black;
+  border: 1px solid black;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .linha-imagem button:hover {
+  color: white;
   background-color: #a3392c;
 }
 
@@ -171,20 +208,20 @@ footer {
 </div>
 
 <header>
-  <img src="https://marketplace.canva.com/EAFYIWPCudg/1/0/1600w/canva-papel-de-parede-para-computador-astronauta-gal%C3%A1xia-preto-e-branco-lKp1cXK1ybY.jpg" alt="Surrealismo" style="width:100%;height:100%;">
+  <img src="https://i.postimg.cc/Bb0ZkGZQ/capa.png" alt="Capa" style="width:100%;height:100%;">
 </header>
 
-<section>
+<section class="sobre">
   <nav>
     <article>
-    <h1>Sobre</h1>
+      <h1><span class="titulo-sobre">Sobre</span></h1>
+    </article>
   </nav>
   
   <article>
     <h1>Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias!</h1>
-
     <div class="button-container">
-      <button class="button" onclick="alert('Hello world!')">Conheça mais!</button>
+      <button class="button" onclick="alert('Hello world!')"> ME CONHEÇA MAIS    ↗</button>
     </div>
   </article>
 </section>
@@ -198,18 +235,18 @@ footer {
 <div class="linha-imagem">  
   <div>
     <img src="https://i.postimg.cc/3JKTktP0/joy1-site.png">
-    <button class="button" onclick="alert('Hello world!')">Joy Gourmet</button>
+    <button class="button" onclick="alert('Hello world!')">JOY GOURMET</button>
   </div>
   <div>
     <img src="https://i.postimg.cc/026zB2yC/pan-home-3.png">
-    <button class="button" onclick="alert('Hello world!')">Pan Jeronny</button>
+    <button class="button" onclick="alert('Hello world!')">PAN JERONNY</button>
   </div>
 </div>
 
 <div class="linha-imagem">  
   <div>
     <img src="https://i.postimg.cc/sxx48dMZ/gif-criabanner.gif">
-    <button class="button" onclick="alert('Hello world!')">FavelaCria</button>
+    <button class="button" onclick="alert('Hello world!')">FAVELACRIA</button>
   </div>
 </div>
 
@@ -222,11 +259,11 @@ footer {
 <div class="linha-imagem">  
   <div>
     <img src="https://i.postimg.cc/mZcPkgWF/mockupcj-home.png">
-    <button class="button" onclick="alert('Hello world!')">Redes Sociais</button>
+    <button class="button" onclick="alert('Hello world!')">REDES SOCIAS</button>
   </div>
   <div>
     <img src="https://i.postimg.cc/Bv6qzmq1/mockuppcj-home.png" style="width:50%;">
-    <button class="button" onclick="alert('Hello world!')">Emails marketing</button>
+    <button class="button" onclick="alert('Hello world!')">EMAILS MARKETING</button>
   </div>
 </div>
 
