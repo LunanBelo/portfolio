@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfaf5;
+
+.header {
+  background-color: #fdfaf5; 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 30px; /* Tamanho da logo */
+  height: auto;
+}
+
+.logo-container .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0E2635;
+}
+
+.header a {
+  color: #0E2635;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 3px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.column:first-child {
+  margin-right: 20px;
+}
+
+.column h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.column h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.column p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  color: black;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: #fdfaf5;
+}
+
+@media (max-width: 768px) {
+  section.sobre {
+    flex-direction: column;
+  }
+
+  .column {
+    margin: 0 0 20px 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/5tr03BqS/icone.png" alt="Logo">
+    <span class="logo-text">Lunan Belo</span>
+  </div>
+  <div class="header-right">
+    <a class="active" href="#home">Projetos</a>
+    <a href="#contact">Sobre</a>
+    <a href="#about">Contato</a>
+  </div> 
+</div>
+
+<header>
+  <img src="https://i.postimg.cc/4N6mWSXb/red-ants-are-kissing-tree-love-triangle.jpg" alt="Capa">
+</header>
+
+<section class="sobre">
+
+  <div class="column">
+    <h1>Joy Gourmet</h1>
+    <h2>Visão Geral</h2>
+    <p>
+      A Joy Gourmet é uma marca de molho de mix de pimentas, que tem uma expressão viva da rica herança culinária e cultural dos povos indígenas brasileiros. Fundada com a missão de honrar e celebrar as tradições do povo indígena Baniwa, a Joy Gourmet é uma ode à diversidade e à intensidade dos sabores que há séculos têm enriquecido a culinária brasileira.
+    </p>
+    <p>
+      A essência da marca é profundamente enraizada na cultura indígena, encontrando inspiração tanto na natureza exuberante do Brasil quanto na resiliência e na força dos povos originários.
+    </p>
+  </div>
+
+  <div class="column">
+    <img src="https://i.postimg.cc/6TJ48stT/shaman-patax-tribe-wearing-feather-headdress-smoking-pipe2.jpg" alt="Imagem representativa">
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Lunan Belo. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
 
