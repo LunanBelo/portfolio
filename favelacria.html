@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfaf5;
+}
+
+.header {
+  background-color: #fdfaf5; 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 30px; /* Tamanho da logo */
+  height: auto;
+}
+
+.logo-container .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0E2635;
+}
+
+.header a {
+  color: #0E2635;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 3px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 15px;
+}
+
+.column:first-child {
+  margin-right: 15px;
+}
+
+.column h1 {
+  font-size: 48px; /* Aumentado */
+  font-weight: bold;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.column h2 {
+  font-size: 18px; /* Diminuído */
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.column p {
+  font-size: 16px; /* Diminuído */
+  line-height: 1.5; /* Ajustado */
+  text-align: justify;
+  color: black;
+}
+
+.column img {
+  width: 90%; /* Diminuído */
+  border-radius: 5px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 45%; /* Ajuste o tamanho das imagens */
+  border-radius: 5px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: #fdfaf5;
+}
+
+
+.image-text-container {
+  display: flex;
+  justify-content: center; /
+  align-items: center; 
+  gap: 20px; 
+  margin-top: 30px;
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto;  
+}
+
+.image-text img {
+  width: 50%; 
+  border-radius: 5px;
+}
+
+.image-text p {
+  width: 50%; 
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  text-align: justify; 
+}
+
+@media (max-width: 768px) {
+  section.sobre {
+    flex-direction: column;
+  }
+
+  .column {
+    margin: 0 0 20px 0;
+  }
+
+  .image-container img {
+    width: 100%; 
+  }
+  
+  .image-text-container {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .image-text img, .image-text p {
+    width: 100%; 
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/5tr03BqS/icone.png" alt="Logo">
+    <span class="logo-text">Lunan Belo</span>
+  </div>
+  <div class="header-right">
+    <a class="active" href="#home">Projetos</a>
+    <a href="#contact">Sobre</a>
+    <a href="#about">Contato</a>
+  </div> 
+</div>
+
+<header>
+  <img src="https://i.postimg.cc/nhZYPjgs/capa-site.png" alt="Capa">
+</header>
+
+<section class="sobre">
+
+  <div class="column">
+    <h1>FAVELACRIA</h1>
+    <h2>Visão Geral</h2>
+    <p>
+      Este projeto de conclusão de curso considera a construção de um projeto gráfico dedicado ao digital, com criação de identidade visual, peças de comunicação em mídias sociais.
+      
+    </p>
+    <p>
+      O projeto refere-se a uma ocupação digital de jovens da periferia, visando a importância do reconhecimento sobre os diferentes tipos de arte que esse tipo de grupo produz. Com ele, pretende-se promover o protagonista da periferia e a juventude que lá vive além, a analisar a importância da arte em suas vidas.
+    </p>
+  </div>
+
+  <div class="column">
+    <img src="https://i.postimg.cc/6TJ48stT/shaman-patax-tribe-wearing-feather-headdress-smoking-pipe2.jpg" alt="Imagem representativa">
+  </div>
+</section>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/Fz5JkwQf/gif.gif" alt="Imagem de pimentas">
+</div>
+
+<div class="image-text-container">
+  <div class="image-text">
+    <img src="https://i.postimg.cc/T16p3mrg/logo-normal-fundo.png" alt="Imagem lado a lado">
+  </div>
+  <div class="image-text">
+    <p>
+      O logotipo foi desenvolvido para se parecer com típicas casas suburbanas, com formatos retangulares, dispostos com pouco espaçamento para que cada letra se encaixe.
+    </p>
+    <p>
+O ícone foi criado combinando as iniciais de cada palavra: F e C, seguindo os mesmos princípios de transmitir a sensação de encaixe.
+    </p>
+  </div>
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/0yBjJhY8/media.png" alt="Imagem de pimentas" style="width: 55%;">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/DZVzxspH/LETRAS.png" alt="Imagem de pimentas" style="width: 55%;">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/8Cf5dw4L/cor-pallet.png" alt="Imagem de pimentas" style="width: 55%;">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/FzNH4v4x/LETRA1.png">
+  <img src="https://i.postimg.cc/yxjY6G6C/LETRA2.png">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/3Jrxf398/Foto-perfilnegativo.jpg">
+  <img src="https://i.postimg.cc/Kv9vdCsn/logo-negativa-fundo.png">
+  
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/4yfs016L/divulga-o-lab.png" alt="Image poster pães">
+</div>
+
+<footer>
+  <p>&copy; 2024 Lunan Belo. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
