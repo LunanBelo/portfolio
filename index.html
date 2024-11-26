@@ -8,19 +8,11 @@ body {
   font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfaf5; /* Define a cor de fundo para a página inteira */
-}
-
-header {
-  position: relative;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-  overflow: hidden;
+  background-color: #fdfaf5;
 }
 
 .header {
-  background-color: #fdfaf5; /* Cor do cabeçalho alinhada com o fundo da página */
+  background-color: #fdfaf5; 
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -54,171 +46,133 @@ header {
   border-radius: 3px;
 }
 
-.header a:hover {
-  background-color: #fdfaf5;
-  color: #0E2635;
-}
-
-.header a.active {
-  background-color: #fdfaf5;
-  color: #0E2635;
-  font-weight: bold;
-}
-
 .header-right {
   display: flex;
   gap: 15px;
 }
 
-section {
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.sobre {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
 }
 
-.sobre {
-  background-color: #282828; /* Cor de fundo personalizada */
-  font-size: 38px;
-  color: white; /* Texto em branco para contraste */
-  padding: 30px; /* Espaçamento interno */
-  border-radius: 8px; 
-}
-
-.sobre h1 {
-  color: white;
-  margin-top: 0; /* Remove margem superior padrão */
-}
-
-.titulo-sobre {
-  font-size: 90px; /* Aumente o tamanho da palavra "Sobre" */
-  font-weight: bold; /* Deixe mais destacado, se quiser */
-  color: white; /* Certifique-se de que a cor esteja correta */
-}
-
-.sobre .button-container .button {
-  background-color: #a3392c; /* Cor de fundo do botão */
-  color: white; /* Texto do botão */
-  border: 3px;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 13px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.sobre .button-container .button:hover {
-  background-color: white; /* Fundo ao passar o mouse */
-  color: #ca4b36; /* Texto ao passar o mouse */
-}
-
-
-nav {
+.column {
   flex: 1;
-  padding: 20px; 
+  padding: 15px;
 }
 
-nav img {
-  width: 100%;
-  height: auto;
+.column:first-child {
+  margin-right: 15px;
 }
 
-article {
-  flex: 2;
-  padding: 20px;
-  color: black;
-  display: flex;
-  flex-direction: column;
-}
-
-.article {
-  text-align: center;
-  font-family: 'Nave', sans-serif; 
-}
-
-.titulo-projetos {
-  font-size: 90px; /
-  font-weight: bold; /
-  color: black;
-}
-
-.linha-imagem {
-  display: flex;
-  justify-content: center; /* Centraliza as imagens na linha */
-  flex-wrap: wrap; /* Permite quebrar para uma nova linha em telas menores */
-  gap: 20px; /* Espaçamento entre as colunas */  
-}
-
-.linha-imagem div {
-  text-align: center;
-  width: 45%;
-}
-
-.linha-imagem img {
-  width: 100%; 
-  height: auto; 
-  border-radius: 8px; 
-}
-
-.linha-imagem button {
-  background-color: #fdfaf5;
-  margin-top: 10px; /* Espaçamento entre imagem e botão */
-  width: 75%; /* Faz o botão ocupar a largura do contêiner */
-  padding: 10px; /* Espaçamento interno do botão */
-  color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 16px;
+.column h1 {
+  font-size: 48px; /* Aumentado */
   font-weight: bold;
-  cursor: pointer;
+  color: black;
+  margin-bottom: 8px;
 }
 
-.linha-imagem button:hover {
-  color: white;
-  background-color: #a3392c;
+.column h2 {
+  font-size: 18px; /* Diminuído */
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 16px;
 }
 
-.contato {
-  background-color: #282828; /* Cor de fundo personalizada */
-  font-size: 38px;
-  color: white; /* Texto em branco para contraste */
-  padding: 30px; /* Espaçamento interno */
-  border-radius: 8px; 
+.column p {
+  font-size: 16px; /* Diminuído */
+  line-height: 1.5; /* Ajustado */
+  text-align: justify;
+  color: black;
+}
+
+.column img {
+  width: 90%; /* Diminuído */
+  border-radius: 5px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 45%; /* Ajuste o tamanho das imagens */
+  border-radius: 5px;
 }
 
 footer {
   padding: 10px;
   text-align: center;
   color: black;
+  background-color: #fdfaf5;
 }
 
-@media (max-width: 600px) {
-  .header {
+/* Adicionado para imagem e texto lado a lado */
+.image-text-container {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  gap: 20px; /* Espaço entre imagem e texto */
+  margin-top: 30px;
+  max-width: 1200px; /* Limita a largura máxima para não esticar muito */
+  width: 100%;
+  margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.image-text img {
+  width: 50%; /* Definindo a largura da imagem */
+  border-radius: 5px;
+}
+
+.image-text p {
+  width: 50%; /* Definindo a largura do texto */
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  text-align: justify; /* Justificando o texto */
+}
+
+@media (max-width: 768px) {
+  section.sobre {
     flex-direction: column;
-    align-items: flex-start;
-  }
-  section {
-    flex-direction: column;
   }
 
-  img {
-    width: 100%;
-    margin-bottom: 20px;
+  .column {
+    margin: 0 0 20px 0;
+  }
+
+  .image-container img {
+    width: 100%; /* As imagens ficam 100% em telas pequenas */
+  }
+
+  /* Para telas pequenas, a imagem e o texto ficam empilhados */
+  .image-text-container {
+    flex-direction: column; /* Organiza a imagem e o texto em coluna em telas pequenas */
+    align-items: flex-start; /* Alinha os itens à esquerda no layout vertical */
+  }
+
+  .image-text img, .image-text p {
+    width: 100%; /* 100% de largura para as imagens e textos em telas pequenas */
   }
 }
-
-.linha-fina {
-  border-top: 2px solid #282828; 
-  margin: 20px 0; 
-}
-
 </style>
 </head>
 <body>
 
 <div class="header">
   <div class="logo-container">
-    <img src="https://i.postimg.cc/5tr03BqS/icone.png" alt="Logo">
+    <img src="https://i.postimg.cc/5tr03BqS/icone.png"onclick="window.location.href='https://lunanbelo.github.io/portfolioLUNAN/index.html'" alt="Logo">
     <span class="logo-text">Lunan Belo</span>
   </div>
   <div class="header-right">
@@ -229,83 +183,58 @@ footer {
 </div>
 
 <header>
-  <img src="https://i.postimg.cc/Bb0ZkGZQ/capa.png" alt="Capa" style="width:100%;height:100%;">
+  <img src="https://i.postimg.cc/4N6mWSXb/red-ants-are-kissing-tree-love-triangle.jpg" alt="Capa">
 </header>
 
 <section class="sobre">
-  <nav>
-    <article>
-      <h1><span class="titulo-sobre">Sobre</span></h1>
-    </article>
-  </nav>
-  
-  <article>
-    <h1 style="font-size: 22px; line-height: 1.5; max-width: 800px; margin: 0 auto;">
-      Sou um designer apaixonado por transformar ideias em visuais impactantes e funcionais. Combinando criatividade e técnica, crio identidades visuais e materiais de marketing que destacam sua marca. Vamos juntos dar vida às suas ideias!
-    </h1>
-    <div class="button-container">
-      <button class="button" onclick="alert('Hello world!')"> ME CONHEÇA MAIS    ↗</button>
-    </div>
-  </article>
+
+  <div class="column">
+    <h1>Joy Gourmet</h1>
+    <h2>Visão Geral</h2>
+    <p>
+      A Joy Gourmet é uma marca de molho de mix de pimentas, que tem uma expressão viva da rica herança culinária e cultural dos povos indígenas brasileiros. Fundada com a missão de honrar e celebrar as tradições do povo indígena Baniwa, a Joy Gourmet é uma ode à diversidade e à intensidade dos sabores que há séculos têm enriquecido a culinária brasileira.
+    </p>
+    <p>
+      A essência da marca é profundamente enraizada na cultura indígena, encontrando inspiração tanto na natureza exuberante do Brasil quanto na resiliência e na força dos povos originários.
+    </p>
+  </div>
+
+  <div class="column">
+    <img src="https://i.postimg.cc/6TJ48stT/shaman-patax-tribe-wearing-feather-headdress-smoking-pipe2.jpg" alt="Imagem representativa">
+  </div>
 </section>
 
-<section>
-  <nav>
-    <article>
-      <h2 class="titulo-projetos">⤵ Projetos</h2>
-      <div class="linha-fina"></div>
+<div class="image-container">
+  <img src="https://i.postimg.cc/MHFHQCw1/pimentas-fileirafloresta.png" alt="Imagem de pimentas">
+</div>
 
-      <div class="linha-imagem">  
-        <div>
-          <img src="https://i.postimg.cc/3JKTktP0/joy1-site.png">
-          <button class="button" onclick="window.location.href='https://lunanbelo.github.io/portfolioLUNAN/joygourmet.html'">JOY GOURMET</button>
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/SQtjmjSH/joy1-site.png">
-          <button class="button" onclick="alert('Hello world!')">PAN JERONNY</button>
-        </div>
-      </div>
+<div class="image-container">
+  <img src="https://i.postimg.cc/hGvS9CCr/pimentas-fileirafloresta.png" alt="Imagem de pimentas" style="width: 55%;">
+</div>
 
-      <div class="linha-imagem">  
-        <div>
-          <img src="https://i.postimg.cc/hGgVVh7p/git-favelaport.gif">
-          <button class="button" onclick="alert('Hello world!')">FAVELACRIA</button>
-        </div>
-      </div>
+<div class="image-container">
+  <img src="https://i.postimg.cc/ZKssWVdZ/Joy-garra1.jpg" alt="Imagem de pimentas">
+  <img src="https://i.postimg.cc/2SPHwyGK/joy-garra2.jpg" alt="Segunda imagem de pimentas">
+</div>
 
-      <div class="linha-imagem" style="margin-top: 30px;"> 
-        <div>
-          <img src="https://i.postimg.cc/W4sWnyw0/M-DIAS-SOCIAS.gif">
-        </div>
-      </div>
+<div class="image-text-container">
+  <div class="image-text">
+    <img src="https://i.postimg.cc/hPYMDvkt/closeup-red-ant.jpg" alt="Imagem lado a lado">
+  </div>
+  <div class="image-text">
+    <p>
+      No centro do logotipo está a formiga vermelha, um símbolo poderoso e multifacetado. A escolha da formiga representa a intensidade das pimentas usadas nos molhos Joy Gourmet, evocando uma sensação de calor e vitalidade. Além disso, a formiga é um animal comum na mitologia e na cosmovisão de muitos povos indígenas brasileiros, sendo frequentemente associada à resiliência, ao trabalho árduo e à cooperação comunitária. Além de também ser muito conhecida pela a forte ardência de sua picada.
+    </p>
+  </div>
+</div>
 
-      <div class="linha-imagem">  
-        <div>
-          <img src="https://i.postimg.cc/mZcPkgWF/mockupcj-home.png">
-          <button class="button" onclick="alert('Hello world!')">REDES SOCIAS</button>
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/Bv6qzmq1/mockuppcj-home.png" style="width:50%;">
-          <button class="button" onclick="alert('Hello world!')">EMAILS MARKETING</button>
-        </div>
-      </div>
-    </article>
-  </nav>
-</section>
+<div class="image-container">
+  <img src="https://i.postimg.cc/W1J8hjV6/joy1.jpg" alt="Imagem de pimentas">
+</div>
 
-<section class="contato">
-  <article>
-    <h2>Se você tem algum projeto em mente, me envie uma mensagem!</h2>
-    <div class="button-container">
-      <button class="button" onclick="alert('Hello world!')">ENTRE EM CONTATO ↗</button>
-    </div>
-  </article>
-</section>
-
- <div class="linha-imagem" >  
-        <div>
-          <img src="https://i.postimg.cc/9Qngt6hD/logo.png">
- </div>
+<div class="image-container">
+  <img src="https://i.postimg.cc/DZ7PjXXB/cores.png" alt="Imagem de pimentas">
+</div>
 
 <footer>
   <p>&copy; 2024 Lunan Belo. Todos os direitos reservados.</p>
