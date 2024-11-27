@@ -137,8 +137,8 @@ article {
 }
 
 .titulo-projetos {
-  font-size: 90px; /
-  font-weight: bold; /
+  font-size: 90px; 
+  font-weight: bold; 
   color: black;
 }
 
@@ -179,11 +179,31 @@ article {
 }
 
 .contato {
-  background-color: #282828; /* Cor de fundo personalizada */
+  background-color: #282828; 
   font-size: 38px;
-  color: white; /* Texto em branco para contraste */
-  padding: 30px; /* Espaçamento interno */
+  color: white;
+  padding: 30px; 
   border-radius: 8px; 
+}
+
+.contato h2 {
+  color: white; 
+}
+
+.button-container .button {
+  background-color: #a3392c; /* Cor de fundo do botão */
+  color: white; /* Texto do botão */
+  border: 3px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-container .button:hover {
+  background-color: white; /* Fundo ao passar o mouse */
+  color: #ca4b36; /* Texto ao passar o mouse */
 }
 
 footer {
@@ -273,12 +293,6 @@ footer {
         </div>
       </div>
 
-      <div class="linha-imagem" style="margin-top: 30px;"> 
-        <div>
-          <img src="https://i.postimg.cc/W4sWnyw0/M-DIAS-SOCIAS.gif">
-        </div>
-      </div>
-
       <div class="linha-imagem">  
         <div>
           <img src="https://i.postimg.cc/mZcPkgWF/mockupcj-home.png">
@@ -294,22 +308,19 @@ footer {
 </section>
 
 <section class="contato">
-  <article>
-    <h2>Se você tem algum projeto em mente, me envie uma mensagem!</h2>
+  <article style="text-align: center;">
+    <h2>Se você tem algum projeto em mente, me envie uma mensagem! ✉️</h2>
     <div class="button-container">
-      <button class="button" onclick="alert('Hello world!')">ENTRE EM CONTATO ↗</button>
+      <button class="button" onclick="window.location.href='mailto:lunanbelo12@gmail.com'">ENVIE UMA MENSAGEM ↗</button>
     </div>
   </article>
 </section>
 
- <div class="linha-imagem" >  
-        <div>
-          <img src="https://i.postimg.cc/9Qngt6hD/logo.png">
- </div>
-
 <footer>
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/9Qngt6hD/logo.png" alt="Logo Final">
+  </div>
   <p>&copy; 2024 Lunan Belo. Todos os direitos reservados.</p>
 </footer>
-
 </body>
 </html>
