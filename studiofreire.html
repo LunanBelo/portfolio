@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfaf5;
+}
+
+.header {
+  background-color: #fdfaf5; 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 30px; /* Tamanho da logo */
+  height: auto;
+}
+
+.logo-container .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0E2635;
+}
+
+.header a {
+  color: #0E2635;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 3px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 15px;
+}
+
+.column:first-child {
+  margin-right: 15px;
+}
+
+.column h1 {
+  font-size: 48px; 
+  font-weight: bold;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.column h2 {
+  font-size: 18px; 
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.column p {
+  font-size: 16px; 
+  line-height: 1.5; 
+  text-align: justify;
+  color: black;
+}
+
+.column img {
+  width: 90%; /* Diminuído */
+  border-radius: 5px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 45%; /* Ajuste o tamanho das imagens */
+  border-radius: 5px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: #fdfaf5;
+}
+
+.image-text-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;  */
+  gap: 20px; 
+  margin-top: 30px;
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto;  
+}
+
+.image-text img {
+  width: 100%; 
+  border-radius: 5px;
+}
+
+.image-text p {
+  width: 100%; 
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  text-align: justify; 
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  section.sobre {
+    flex-direction: column;
+  }
+
+  .column {
+    margin: 0 0 20px 0;
+  }
+
+  .image-container img {
+    width: 100%; 
+  }
+  
+  .image-text-container {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .image-text img, .image-text p {
+    width: 100%; 
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-container">
+    <img src="https://i.postimg.cc/5tr03BqS/icone.png" alt="Logo">
+    <span class="logo-text">Lunan Belo</span>
+  </div>
+  <div class="header-right">
+    <a class="active" href="#home">Projetos</a>
+    <a href="#contact">Sobre</a>
+    <a href="#about">Contato</a>
+  </div> 
+</div>
+
+<header>
+  <img src="https://i.postimg.cc/vTq6FRHP/edd8b0164421629-63f661e46d365.gif" alt="Capa">
+</header>
+
+<section class="sobre">
+
+  <div class="column">
+    <h1>Studio Freire</h1>
+    <h2>Visão Geral</h2>
+<div class="image-text-container">
+  <div class="image-text">
+    <p class="text-center">
+         O projeto de rebranding do salão de beleza Studio Freire, surgiu após a vontade de transparecer o que realmente representavam: elegância, sofisticação e beleza, como os cabelos e produções que realizam diariamente 
+desde de 2012 em São Paulo.
+    </p>
+    <p class="text-center">
+      Na logo foi utilizada tipografia onde transparecia os principais pontos desejados, além de uma leve curvatura 
+simbolizando um fio de cabelo.
+    </p>
+    <p class="text-center">
+      O projeto tem foco maior para atuação em redes sociais, principal meio de comunicação da marca, por isso, além da 
+criação de stories que irão acompanhá-los, a logo foi redimensionada para uma melhor aplicação e visibilidade 
+no meio em que iria ser aplicada.
+    </p>
+  </div>
+</div>
+
+  <div class="column">
+  </div>
+</section>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/hPvd8GpN/2eb39b164421629-63f661e46c290.gif" alt="Imagem de pimentas">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/rFHtfLHs/e2dca4164421629-63f661e4719c4.png" alt="Imagem de pimentas" style="width: 55%;">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/cJRg1tLt/4489af164421629-63f661e47074d.gif" alt="Image poster pães">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/KcqKY2xf/261307164421629-63f661e46f6f9.png" alt="Image poster pães">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/rFDD0Ppk/a8672a164421629-63f661e46b147.png" alt="Image poster pães">
+</div>
+
+<div class="image-container">
+  <img src="https://i.postimg.cc/tgNJG0Bh/52a66f164421629-63f661e46e584.png" alt="Image poster pães">
+</div>
+
+
+<footer>
+  <p>&copy; 2024 Lunan Belo. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
 
