@@ -212,6 +212,13 @@ footer {
   color: black;
 }
 
+footer .logo-container img {
+  width: 200px;  /* Tamanho ajustado para a imagem no rodapé */
+  height: auto;  /* Manter a proporção da imagem */
+  display: block; /* Torna a imagem um bloco */
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
 @media (max-width: 600px) {
   .header {
     flex-direction: column;
@@ -230,6 +237,12 @@ footer {
 .linha-fina {
   border-top: 2px solid #282828; 
   margin: 20px 0; 
+}
+
+/* Estilo específico para a imagem do Favelacria */
+.linha-imagem div img[src*="favelacria"] {
+  width: 80%; /* Faz a imagem do Favelacria ocupar 80% da largura da tela */
+  margin-top: 30px; /* Adiciona espaço acima da imagem */
 }
 
 </style>
@@ -288,7 +301,7 @@ footer {
 
       <div class="linha-imagem">  
         <div>
-          <img src="https://i.postimg.cc/hGgVVh7p/git-favelaport.gif">
+          <img src="https://i.postimg.cc/sxc4M0fS/gif-criabanner.gif">
           <button class="button" onclick="window.location.href='https://lunanbelo.github.io/portfolioLUNAN/favelacria.html'">FAVELACRIA</button>
         </div>
       </div>
@@ -299,8 +312,8 @@ footer {
           <button class="button" onclick="window.location.href='https://lunanbelo.github.io/portfolioLUNAN/redes-sociais.html'">REDES SOCIAIS</button>
         </div>
         <div>
-          <img src="https://i.postimg.cc/Bv6qzmq1/mockuppcj-home.png" style="width:50%;">
-          <button class="button" onclick="alert('Hello world!')">EMAILS MARKETING</button>
+          <img src="https://i.postimg.cc/c43sNyHr/imagem-freire.pngg" style="width:100%;">
+          <button class="button" onclick="window.location.href='https://lunanbelo.github.io/portfolioLUNAN/studiofreire.html'">STUDIO FREIRE</button>
         </div>
       </div>
     </article>
